@@ -111,4 +111,15 @@ After we stop the app and then re run it we should see the details getting fetch
 We will be creating Pipleine in Azure Devops
 
 - Create New Project
-- Go to Repos> Import a Repository 
+- Go to Repos> Import a Repository
+- Create Pipeline > Select Azure Repos Git as Source Code Location > Select Repo
+- We also have a YAML File you can integrate the code but make sure you configure the right service connections for the ACR connect.
+- So As part of the Dev Pipeline, we are creating a Dockerfile and container from it
+- Then we build the image and upload it to ACR
+- We also download the image and run the container .
+- The Image Build and Push is done through Docker Build and Push Command, however for Image run we use Bash Command
+- Make use Assistant to configure the connections
+![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/bbb94f25-f73f-4583-bd4b-dc0f595e3d72)
+
+- ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/0183dd3f-982f-4fbc-a74e-fbf8c47baf4e)
+
