@@ -1,0 +1,16 @@
+These Instructions will help to install Base Machine with necessary plugins
+
+Pre-Req: Make sure you have a Linux Ubuntu Machine Ready where you will run the .sh script to install plugisn
+
+
+1. Clone the code 
+git clone #<URL of Git >#
+
+
+2. Switch to the directory
+
+3. set the executable mode of the file 
+chmod 755 PluginsforBaseMachine.sh
+
+4. Run the script
+./PluginsforBaseMachine.sh
