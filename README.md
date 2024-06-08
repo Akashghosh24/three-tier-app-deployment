@@ -63,5 +63,14 @@ To get the above data:
  ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/ac21b8f9-2fe2-4d95-8e64-c8e1d1efe131)
 Once we have all the configuration data, we can start with the build.
 
+### Deployment Strategy:
+- The App Will be first build locally to understand it's build process.
+- Then the App will be deployed on Containers via Pipeline
+- Finally Once Production Ready, it will be deploye to AKS via pipeline.
 
-  
+### Infra details
+To build the app locally, we will run in on Ubuntu VM and for Pipeline we will run it via Self Hosted Agent.
+For running the app make sure the NSG rules are allowed for the ports- 3000, 8080, 
+Make sure the Local machine and self hosted agent has NPM installed to run the build.
+The Infra shell script is and necessary files are in Infra Folder.
+The App Source Code and necessary files are in App Folder.
