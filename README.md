@@ -99,5 +99,16 @@ npm start
 The App is available at port 3000 of the ubuntu machine
 ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/bc316f4f-ab20-4bd5-b04e-295783e23021)
 
+We will now register the user and add camping information just to check if the app is functioning as per the intention.
+![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/41f8e8f7-57ee-4a96-b049-a8bd29227cbf)
 
+We can check at the terminal that data is being uploaded to MonodDB,Mapbox and Cloudinary
+![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/ffcfc246-07ca-4a27-aedd-0cc8970c92e1)
 
+After we stop the app and then re run it we should see the details getting fetched. it means the connections to db and the app is functioning correctly.
+
+### Deploying Website to Run as Container via Pipeline
+We will be creating Pipleine in Azure Devops
+
+- Create New Project
+- Go to Repos> Import a Repository 
