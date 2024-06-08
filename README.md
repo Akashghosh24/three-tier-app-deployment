@@ -108,7 +108,7 @@ We can check at the terminal that data is being uploaded to MonodDB,Mapbox and C
 After we stop the app and then re run it we should see the details getting fetched. it means the connections to db and the app is functioning correctly.
 
 ### Deploying Website to Run as Container via Pipeline
-We will be creating Pipleine in Azure Devops
+We will be creating Pipleine in Azure Devops. Make sure you have ACR deployed before hand because we will be using it
 
 - Create New Project
 - Go to Repos> Import a Repository
@@ -117,6 +117,9 @@ We will be creating Pipleine in Azure Devops
 - So As part of the Dev Pipeline, we are creating a Dockerfile and container from it
 - Then we build the image and upload it to ACR
 - We also download the image and run the container .
+
+
+### Deploying Website to AKS Production.
 - The Image Build and Push is done through Docker Build and Push Command, however for Image run we use Bash Command
 - Make use Assistant to configure the connections
 ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/bbb94f25-f73f-4583-bd4b-dc0f595e3d72)
