@@ -119,10 +119,17 @@ We will be creating Pipleine in Azure Devops. Make sure you have ACR deployed be
 - We also download the image and run the container .
 
 
-### Deploying Website to AKS Production.
+
 - The Image Build and Push is done through Docker Build and Push Command, however for Image run we use Bash Command
 - Make use Assistant to configure the connections
 ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/bbb94f25-f73f-4583-bd4b-dc0f595e3d72)
 
 - ![image](https://github.com/Akashghosh24/three-tier-app-deployment/assets/94949101/0183dd3f-982f-4fbc-a74e-fbf8c47baf4e)
 
+### Deploying Website to AKS Production.
+
+Deploying to AKS cluster will involve deployment through a manifest file.
+We  will be running the container on AKS based on the image pushed in the ACR repository.
+Since the ACR is public, hence manifest file will have the ACR details and it will run an image based on the image we built.
+Also we are having secrets in manifest file which will be base 64 encoded, Although are env is copied during creatino of image but for production, the values provided at the manifest will be overriding.
+since image can be public and it can be publicly accessed.
